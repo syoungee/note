@@ -1,7 +1,7 @@
 import styles from './layout.module.css';
 import Link from 'next/link';
 
-export default function Prodcut({ children }: { children: RecordingState.ReactNode }) {
+export default function Prodcut({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav className={styles.nav}>
