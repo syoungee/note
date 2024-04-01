@@ -2,6 +2,7 @@ import React from 'react';
 import { getProducts } from '../service/products';
 import Link from 'next/link';
 import styles from './page.module.css';
+import MeowArticle from '@/components/MeowArticle';
 
 // const products = ['shirt', 'pants', 'skirt', 'shoes'];
 
@@ -24,7 +25,7 @@ export default async function page() {
             <Link href={`/products/${product.id}`}>{product.name}</Link>
           </li>
         ))}
-        <article className={styles.article}>{factText}</article>
+        <MeowArticle />
       </ul>
     </div>
   );
